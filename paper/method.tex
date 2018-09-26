@@ -16,8 +16,11 @@
 
 % Light curve simulations - Intro
 We tested the potential for finding extra-galactic planets and small stars in
-this survey by simulating light curves with realistic white noise properties,
-cadence and intermittent time coverage from ground-based observations.
+this survey by simulating light curves with a cadence of five minutes and a
+white noise amplitude of 5.3\%, estimated using the DECam exposure time
+calculator.
+We assumed that observations would take place continually over 6 hours per
+night, for 9 nights.
 % We also used these simulations to optimize our observing strategy.
 %   - Planet injections
 We generated transit signals for planets with a range of randomly generated
@@ -56,11 +59,11 @@ successfully recovered within that radius and period range.
 The fraction of detected planets increases with increasing planet size and
 decreasing orbital period.
 
-To generate these results we simulated light curves with a 3 minute cadence,
-over two sets of 9 consecutive nights, separated by a lunar month.
-These results indicate that we may be able to detect inflated hot Jupiters
-(planets with radii between 1 and 1.5 $R_{\mathrm{Jup}}$) with orbital periods
-between 8 hours and 4 days.
+% To generate these results we simulated light curves with a 3 minute cadence,
+% over two sets of 9 consecutive nights, separated by a lunar month.
+% These results indicate that we may be able to detect inflated hot Jupiters
+% (planets with radii between 1 and 1.5 $R_{\mathrm{Jup}}$) with orbital periods
+% between 8 hours and 4 days.
 
 \begin{figure}
   \caption{The completeness of our exoplanet transit detection pipeline as a
@@ -75,32 +78,32 @@ between 8 hours and 4 days.
     by a lunar month.
 }
   \centering
-    \includegraphics[width=.7\textwidth]{../completeness.pdf}
+    \includegraphics[width=1\textwidth]{../completeness.pdf}
 \label{fig:completeness}
 \end{figure}
 
-%   - Optimizing cadence and observing strategy
-% We tested a range of cadences by injecting planets into light curves with
-% different cadences and corresponding white noise amplitudes and running BLS on
-% these light curves.
-We simulated DECam light curves with a range of cadences and corresponding
-white noise amplitudes.
-We tested cadences of 3, 5, 8 and 10 minutes with SNRs of 7.0\%, 5.3\%, 4.2\%
-and 3.8\% respectively and found that the most rapid cadence, 3 minute
-integrations, resulted in the largest number of successfully detected
-exoplanets by a marginal amount, despite having the worst photometric
-precision per exposure.
-We also tested a range of observing strategies.
-We simulated light curves for 2 sets of 9 consecutive nights separated by a
-lunar month and 4 sets of 9 nights where observations are conducted
-every-other-night, separated by a lunar month.
-We found that closely spacing nights of observations resulted in a slightly
-larger overall number of recovered planets, with slightly more small planets.
-Spreading the same number of nights over a longer baseline with gaps in
-between resulted in slightly better recovery of planets on longer orbital
-periods, although a smaller number of planets were recovered overall.
-% Since our sensitivity to planet transits rapidly decreases with increasing
-% orbital period, and our planet detection pipeline we structure our observing strategy
+% %   - Optimizing cadence and observing strategy
+% % We tested a range of cadences by injecting planets into light curves with
+% % different cadences and corresponding white noise amplitudes and running BLS on
+% % these light curves.
+% We simulated DECam light curves with a range of cadences and corresponding
+% white noise amplitudes.
+% We tested cadences of 3, 5, 8 and 10 minutes with SNRs of 7.0\%, 5.3\%, 4.2\%
+% and 3.8\% respectively and found that the most rapid cadence, 3 minute
+% integrations, resulted in the largest number of successfully detected
+% exoplanets by a marginal amount, despite having the worst photometric
+% precision per exposure.
+% We also tested a range of observing strategies.
+% We simulated light curves for 2 sets of 9 consecutive nights separated by a
+% lunar month and 4 sets of 9 nights where observations are conducted
+% every-other-night, separated by a lunar month.
+% We found that closely spacing nights of observations resulted in a slightly
+% larger overall number of recovered planets, with slightly more small planets.
+% Spreading the same number of nights over a longer baseline with gaps in
+% between resulted in slightly better recovery of planets on longer orbital
+% periods, although a smaller number of planets were recovered overall.
+% % Since our sensitivity to planet transits rapidly decreases with increasing
+% % orbital period, and our planet detection pipeline we structure our observing strategy
 
 % found that targeting the
 % L \& SMC over multiple series of consecutive nights resulted in a greater number

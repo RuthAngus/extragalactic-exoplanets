@@ -19,7 +19,7 @@ We tested the potential for finding extra-galactic planets and small stars in
 this survey by simulating light curves with a cadence of five minutes and a
 white noise amplitude of 5.3\%, estimated using the DECam exposure time
 calculator.
-We assumed that observations would take place continually over 6 hours per
+We assumed that observations would take place continuously over 6 hours per
 night, for 9 nights.
 % We also used these simulations to optimize our observing strategy.
 %   - Planet injections
@@ -27,8 +27,8 @@ We generated transit signals for planets with a range of randomly generated
 radii and orbital periods, all orbiting Sun-like stars.
 The orbital periods of these planets ranged from around 8 hours to 10 days and
 the planet sizes ranged from 0.5 to 2 times the radius of Jupiter.
-1000 Exoplanet transit signals were generated using the {\tt batman} code
-\citep{kreidberg2015}, and injected into a set of 1000 simulated light curves.
+2000 Exoplanet transit signals were generated using the {\tt batman} code
+\citep{kreidberg2015}, and injected into a set of 2000 simulated light curves.
 
 %   - Planet detection
 In order to detect the planets in our simulated data set we used the
@@ -57,7 +57,15 @@ as a function of injected radius and orbital period.
 The color of each grid rectangle represents the fraction of planets that were
 successfully recovered within that radius and period range.
 The fraction of detected planets increases with increasing planet size and
-decreasing orbital period.
+decreasing orbital period due.
+In this experiment we successfully detected 113 out of the 2000 injected
+planets, preferentially recovering the larger planets on shorter orbital
+periods.
+This gives an overall completeness of around 6\%, integrated over the entire
+orbital period and planet radius range tested here.
+Of the 113 detected planets, 5 were smaller than Jupiter.
+Our pipeline completeness for planets smaller than Jupiter is therefore around
+0.25\%.
 
 % To generate these results we simulated light curves with a 3 minute cadence,
 % over two sets of 9 consecutive nights, separated by a lunar month.
@@ -68,17 +76,16 @@ decreasing orbital period.
 \begin{figure}
   \caption{The completeness of our exoplanet transit detection pipeline as a
     function of planet radius and orbital period.
-    This figure summarizes the results of our injection and recovery tests
-    indicating that our planet detection pipeline is sensitive to inflated hot
+    This figure summarizes the results of our injection and recovery tests and
+    indicates that our planet detection pipeline is sensitive to inflated hot
     Jupiters (planets with radii between 1 and 1.5 $R_{\mathrm{Jup}}$) with
-    orbital periods of around 8 hours up to 4 days.
+    orbital periods from around 8 hours up to 4 days.
     This figure shows the results of a simulated DECam survey with a cadence
-    of 3 minutes over 6 hours of observations per night.  Observations are
-    simulated over two sets of 9 consecutive nights separated
-    by a lunar month.
+    of 5 minutes over 6 hours of observations per night.  Observations are
+    simulated over 9 consecutive nights.
 }
   \centering
-    \includegraphics[width=1\textwidth]{../completeness.pdf}
+    \includegraphics[width=1\textwidth]{completeness.pdf}
 \label{fig:completeness}
 \end{figure}
 
